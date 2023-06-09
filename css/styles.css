@@ -565,7 +565,7 @@ margin-bottom: 16px;
   padding: 12px 24px;
   border-radius: 4px;
 border: 1px solid #E7E9FC;
-transition: color var(--text-transiton), background-color var(--text-transiton), border var(--text-transiton), box-shadow var(--text-transiton) ;
+transition: color var(--text-transiton), background-color var(--text-transiton), border-color var(--text-transiton), box-shadow var(--text-transiton) ;
 }
 
 .projects-menu-btn:hover,
@@ -598,7 +598,7 @@ transition: color var(--text-transiton), background-color var(--text-transiton),
 }
 
 
-.projects-list-link:hover .projects-cover-text, .projects-list-link:focus .text  {
+.projects-list-link:hover .projects-cover-text, .projects-list-link:focus .projects-cover-text  {
   transform: translateY(0);
 }
 
