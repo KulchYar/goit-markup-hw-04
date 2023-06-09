@@ -162,7 +162,7 @@ bottom: -1px;
 /** ---------------------HERO------------------ */
 
 .hero {
-  
+  max-width: 1440px;
   background-color: var(--main-color);
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -170,10 +170,12 @@ bottom: -1px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-container {
-  max-width: 1440px;
+ 
 }
 
 .hero-title {
@@ -426,6 +428,7 @@ height: 88px;
     display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
     
 }
 
@@ -562,7 +565,7 @@ margin-bottom: 16px;
   padding: 12px 24px;
   border-radius: 4px;
 border: 1px solid #E7E9FC;
-transition: color var(--text-transiton), background-color var(--text-transiton), border-color var(--text-transiton), box-shadow var(--text-transiton) ;
+transition: color var(--text-transiton), background-color var(--text-transiton), border var(--text-transiton), box-shadow var(--text-transiton) ;
 }
 
 .projects-menu-btn:hover,
@@ -570,7 +573,7 @@ transition: color var(--text-transiton), background-color var(--text-transiton),
   background-color: var(--hover-color);
   color: #ffffff;
   border: 1px solid transparent;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list {
@@ -587,12 +590,16 @@ transition: color var(--text-transiton), background-color var(--text-transiton),
 
 .projects-list-link {
   display: block;
+  transition: box-shadow var(--text-transiton);
+}
+
+.projects-list-link:hover, .projects-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
 .projects-list-link:hover .projects-cover-text, .projects-list-link:focus .text  {
   transform: translateY(0);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-wrap{
@@ -635,7 +642,7 @@ position: absolute;
 background-color: var(--second-color);
 top: 0;
 left: 0;
-padding: 40px 32px 164px 32px;
+padding: 40px 32px;
 height: 100%;
 transform: translateY(100%);
 transition: transform var(--text-transiton);
@@ -687,7 +694,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    transition: background-color var(--text-transiton), border-radius var(--text-transiton);
+    transition: background-color var(--text-transiton), border var(--text-transiton);
 }
 
 
@@ -706,6 +713,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
 .backdrop-icon {
   fill: var(--main-color);
+  transition: fill var(--text-transiton);
 }
 
 .is-hidden {
